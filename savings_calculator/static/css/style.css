@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Open+Sans:ital,wght@0,400;1,800&family=Yusei+Magic&display=swap');
 
 html {
-    font-family: Yusei+Magic
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    color: aqua;
-}
