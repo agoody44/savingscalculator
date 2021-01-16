@@ -1,44 +1,32 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <title>Savings Calculator</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>{% block title %}Savings Calculator{% endblock %}</title>
 </head>
 <body>
 
     <nav class="navbar navbar-inverse">
+      {% block content %}
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Savings Calcultor</a>
+            <a class="navbar-brand" href="">Savings Calculator</a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="">Home</a></li>
       
           </ul>
         </div>
+        {% endblock %}
       </nav>
 
 
-
-    <div class="card" style="width: 18rem;">
-        <i class="fas fa-wallet"></i>
-        <div class="card-body">
-          <h1 class="card-title">Savings Calculator</h1>
-          <p class="card-text">This is a simple savings calculator.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">How much do you make an hour?</li>
-          <li class="list-group-item"></li>
-          <li class="list-group-item"></li>
-        </ul>
-      </div>
-
-    <footer>
+    <footer id="footer">
         <p>Copyright &copy; All Rights Reserved 2021 Savings Calculator</p>
     </footer>
 </body>

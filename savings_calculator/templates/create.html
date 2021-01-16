@@ -1,0 +1,11 @@
+
+
+{% block title %} Create New Calculator {% endblock %}
+
+{% block content %} 
+Calculator Page  
+<form action="post" action="/create">
+    {{form}}
+    <button type='submit', name='calculate'>Calculate</button>
+</form>
+{% endblock %}
