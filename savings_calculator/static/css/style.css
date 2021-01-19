@@ -28,3 +28,18 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+#text {
+    border: 1px solid black;
+}
+
+#CF {
+    display: table;
+    width: 100%;
+}
+
+#form_CF {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}

@@ -4,11 +4,13 @@
 {% block content %}
 
 <!-- Calculator Page   -->
-<form method='post'>
-    {% csrf_token %}
-    {{form.as_p}}
-    <button type='submit', name='calculate'>Calculate</button>
-</form>
+<div id='CF'>
+    <form id='form_cf' method='post'>
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type='submit', name='calculate'>Calculate</button>
+    </form>
+</div>
 
 {% if wage and bills %}
 {{wage}}

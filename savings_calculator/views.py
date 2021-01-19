@@ -29,7 +29,7 @@ def calculate (request):
 
             value = float(wage)
             daily = value * 8
-            # dv_value.set("%.2f" % daily)
+            # daily_value.set("%.2f" % daily)
             weekly = daily * 5
             # wv_value.set("%.2f" % weekly)
             monthly = weekly * 4
