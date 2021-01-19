@@ -27,7 +27,7 @@ SECRET_KEY = '^0s_bwu@&3)caqrttm)vstd7eq=awu@8=vfxanx1zf@d9^c8ba'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['morning-shelf-40256.herokuapp.com/', '127.0.0.1:5000/']
+ALLOWED_HOSTS = ['savings-calculator-8189.herokuapp.com/', '127.0.0.1:5000/']
 
 
 # Application definition
