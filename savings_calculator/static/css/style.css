@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Potta One', cursive;
+    text-align: center;
 }
 
 .nav{
@@ -29,22 +30,20 @@ img {
     margin-right: auto;
 }
 
-#text {
-    border: 1px solid rgb(255, 57, 57);
+#CT{
+    border: 3px solid rgb(0, 0, 0);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    text-align: center
+
 }
 
-#CF {
-    display: table;
-    width: 100%;
+/* Wage and Bills Form */
+form {
+    display: inline-block;
 }
 
-#form_CF {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
+/* button {
+    align-items: center;
+} */

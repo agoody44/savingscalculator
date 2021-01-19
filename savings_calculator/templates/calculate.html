@@ -12,7 +12,37 @@
     </form>
 </div>
 
-<div id='text'>
+
+
+
+<table class="table table-sm table-hover table-dark" id='CT'>
+    {% if wage and bills %}
+    <thead>
+    <tr>
+        
+        <th scope="col">Hourly Wage</th>
+        <th scope="col">Daily Wage</th>
+        <th scope="col">Weekly Wage</th>
+        <th scope="col">Monthy Wage</th>
+        <th scope="col">Bills</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        
+        <td>{{wage}}</td>
+        <td>{{daily}}</td>
+        <td>{{weekly}}</td>
+        <td>{{monthly}}</td>
+        <td>{{bills}}</td>
+    </tr>
+    </tbody>
+    {% endif %}
+</table>
+
+
+
+<!-- <div id='text'>
 {% if wage and bills %}
 {{wage}}
 {{daily}}
@@ -22,7 +52,7 @@
 {% endif %}
 </div>
 
-{% endblock %}
+{% endblock %} -->
 
 
 
