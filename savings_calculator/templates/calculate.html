@@ -5,6 +5,7 @@
 
 <!-- Calculator Page   -->
 <div id='CF'>
+    <br>
     <form id='form_cf' method='post'>
         {% csrf_token %}
         {{form.as_p}}
@@ -40,6 +41,10 @@
     {% endif %}
 </table>
 
+<br>
+
+<img id='Cimg' src="{% static 'imgs/pngwing.png'  %} ">
+
 
 
 <!-- <div id='text'>
@@ -50,9 +55,9 @@
 {{monthly}}
 {{bills}}
 {% endif %}
-</div>
+</div> -->
 
-{% endblock %} -->
+{% endblock %}
 
 
 
