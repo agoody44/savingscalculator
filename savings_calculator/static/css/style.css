@@ -8,6 +8,11 @@ body {
     font-family: 'Potta One', cursive;
 }
 
+.nav{
+    background-color: black;
+    color: white;
+}
+
 #footer {
     position: fixed;
     left: 0;

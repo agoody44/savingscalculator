@@ -11,13 +11,15 @@ def home(request):
     #return HttpResponse("Hello, Welcome!")
     return render(request, 'home.html')
 
-def create (request):
+def calculate (request):
 
     if request.method == 'POST':
         form = CalculateSavings(request.POST)
         if form.is_valid():
             # form.save()
-            # return redirect('create')
+            # return redirect('calculate')
+            # request.session['CalculateSavings_input'] = request.POST['CalculateSavings_input']
+            # return redirect('savings_url')
             
 
             wage = form.cleaned_data['wage']
@@ -26,9 +28,10 @@ def create (request):
             print(wage, bills)
 
     form = CalculateSavings()
-    return render(request, 'create.html', {'form' : form})
+    return render(request, 'calculate.html', {'form' : form})
 
 
 def savings(request):
     #return HttpResponse("Hello, Welcome!")
+    # url = request.session.get('CalculateSavings_input')
     return render(request, 'savings.html')
