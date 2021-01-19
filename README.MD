@@ -4,14 +4,14 @@ A simple calculator app.
 
 ## Techonologies Used
 
--HTML5
--CSS3
--JavaScript
--Python
--Django
--Bootstrap
--Google Fonts
--Font Awesome
+- HTML5
+- CSS3
+- JavaScript
+- Python
+- Django
+- Bootstrap
+- Google Fonts
+- Font Awesome
 
 
 ## Screenshots
