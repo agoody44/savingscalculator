@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Calculator</title>
 
     <!-- css -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -14,14 +15,17 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 
-    <title>Savings Calculator</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
 </head>
 <body>
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="/create">Savings Calculator</a>
+            <a class="navbar-brand" href="/create">Savings <i class="fas fa-calculator"></i></a>
           </div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="/">Home</a></li>
@@ -30,15 +34,9 @@
           </ul>
         </div>
       </nav>
-
-
-    
-
 {% block content %}
 
 {% endblock %}
-
-
 <footer id="footer">
     <p>Copyright &copy; All Rights Reserved 2021 Savings Calculator</p>
 </footer>
