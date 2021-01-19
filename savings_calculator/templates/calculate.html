@@ -10,6 +10,14 @@
     <button type='submit', name='calculate'>Calculate</button>
 </form>
 
+{% if wage and bills %}
+{{wage}}
+{{bills}}
+{{daily}}
+{{weekly}}
+{{monlthy}}
+{% endif %}
+
 {% endblock %}
 
 

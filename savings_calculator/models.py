@@ -1,20 +1,26 @@
 from django.db import models
 
 # Create your models here.
-class SavingsCalculator(models.Model):
-    wage = models.CharField(max_length=200)
-    bills = models.CharField(max_length=200)
+# class SavingsCalculator(models.Model):
+#     wage = models.CharField(max_length=200)
+#     bills = models.CharField(max_length=200)
 
-    def __str__(self):
-        return self.wage
+#     def __str__(self):
+#         return self.wage
 
 
 class CalculateSavings(models.Model):
     wage = models.CharField(max_length=200)
     bills = models.CharField(max_length=200)
+    daily = models.DecimalField(max_digits=6, decimal_places=3)
+    weekly = models.DecimalField(max_digits=6, decimal_places=2)
+    monthly = models.DecimalField(max_digits=6, decimal_places=2)
 
     def __str__(self):
         return self.wage
+
+
+
 
 
 # class Item(models.Model):
