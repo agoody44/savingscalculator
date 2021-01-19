@@ -6,7 +6,6 @@ A simple calculator app.
 
 - HTML5
 - CSS3
-- JavaScript
 - Python
 - Django
 - Bootstrap
