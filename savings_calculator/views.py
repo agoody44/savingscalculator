@@ -27,22 +27,23 @@ def calculate (request):
 
 
 
-            value = float(wage)
+            value = int(wage)
+
             daily = value * 8
-            # daily_value.set("%.2f" % daily)
+            
             weekly = daily * 5
-            # wv_value.set("%.2f" % weekly)
+            
             monthly = weekly * 4
-            # mv_value.set("%.2f" % monthly)
-            value = float(bills)
+            
+            value = int(bills)
             bills = monthly - value
-            # bv_value.set("%.2f" % bills)
+            
 
             
 
             print(wage, bills, daily, weekly, monthly)
 
     form = CalculateSavings()
-    return render(request, 'calculate.html', {'form' : form, 'wage' : wage, 'bills' : bills, 'daily' : daily, 'weekly' : weekly, 'monthly': monthly } )
+    return render(request, 'calculate.html', {'form' : form, 'wage' : wage, 'daily' : daily, 'weekly' : weekly, 'monthly': monthly, 'bills' : bills, } )
 
 

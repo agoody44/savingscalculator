@@ -12,13 +12,15 @@
     </form>
 </div>
 
+<div id='text'>
 {% if wage and bills %}
 {{wage}}
-{{bills}}
 {{daily}}
 {{weekly}}
-{{monlthy}}
+{{monthly}}
+{{bills}}
 {% endif %}
+</div>
 
 {% endblock %}
 
