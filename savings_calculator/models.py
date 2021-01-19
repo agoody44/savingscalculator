@@ -12,9 +12,9 @@ from django.db import models
 class CalculateSavings(models.Model):
     wage = models.CharField(max_length=200)
     bills = models.CharField(max_length=200)
-    daily = models.DecimalField(max_digits=6, decimal_places=4)
-    weekly = models.DecimalField(max_digits=6, decimal_places=4)
-    monthly = models.DecimalField(max_digits=6, decimal_places=4)
+    # daily = models.DecimalField(max_digits=6, decimal_places=4)
+    # weekly = models.DecimalField(max_digits=6, decimal_places=4)
+    # monthly = models.DecimalField(max_digits=6, decimal_places=4)
 
     def __str__(self):
         return self.wage

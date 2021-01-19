@@ -22,20 +22,25 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="/calculate">Savings <i class="fas fa-calculator"></i></a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            
-      
-          </ul>
+
+  <!-- <nav>
+    <div class="nav-wrapper">
+      <a href="/calculate" class="brand-logo center"><i class="fas fa-calculator"></i></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/calculate">Savings Calculator</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <nav class="navbar">
+    <ul class="nav navbar-nav">
+      <li><a href="/calculate">Savings <i class="fas fa-calculator"></i></a></li>
+      <li><a href="/">Home</a></li>
+    </ul>
         </div>
       </nav>
 {% block content %}
-
 {% endblock %}
 <footer id="footer">
     <p>Copyright &copy; All Rights Reserved 2021 Savings Calculator</p>

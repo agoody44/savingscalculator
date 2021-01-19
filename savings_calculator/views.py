@@ -20,9 +20,6 @@ def calculate (request):
 
             wage = form.cleaned_data['wage']
             bills = form.cleaned_data['bills']
-            daily = form.cleaned_data['bills']
-            weekly = form.cleaned_data['bills']
-            monthly = form.cleaned_data['bills']
 
 
 
