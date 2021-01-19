@@ -15,7 +15,7 @@ A simple calculator app.
 
 
 ## Screenshots
-![wireframe1](savings_calculator/static/imgs/Screen Shot 2021-01-19 at 4.53.35 PM.png)
+![wireframe1](savings_calculator/static/imgs/Screen-Shot.png)
 
 
 ## Getting Started
