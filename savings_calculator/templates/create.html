@@ -1,12 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
 
+{% block content %}
 
-{% block title %} Create New Calculator {% endblock %}
-
-{% block content %} 
 <!-- Calculator Page   -->
 <form method='post'>
     {% csrf_token %}
     {{form.as_p}}
     <button type='submit', name='calculate'>Calculate</button>
 </form>
+
 {% endblock %}
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+    <title>Savings Calculator</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/create">Savings Calculator</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="">Home</a></li>
+      
+          </ul>
+        </div>
+      </nav>
+
+
+    
+
+{% block content %}
+
+{% endblock %}
+
+
+<footer id="footer">
+    <p>Copyright &copy; All Rights Reserved 2021 Savings Calculator</p>
+</footer>
+</body>
+</html>

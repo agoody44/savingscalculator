@@ -1,11 +1,10 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from .forms import CalculateSavings
-from .models import SavingsCalculator, Item
+from .models import SavingsCalculator
 
-def index(response, id):    
-    ls = SavingsCalculator.obects.get(id=id)
-    return HttpResponse('<h1>%s</h1>' %ls.wage)
+# def index(response):
+#     return render(request,'index.html')
 
 
 def home(request):
@@ -17,6 +16,8 @@ def create (request):
     if request.method == 'POST':
         form = CalculateSavings(request.POST)
         if form.is_valid():
+            # form.save()
+            # return redirect('create')
             
 
             wage = form.cleaned_data['wage']
