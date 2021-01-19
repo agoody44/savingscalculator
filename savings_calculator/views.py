@@ -27,7 +27,7 @@ def calculate (request):
 
 
 
-            value = int(wage)
+            value = float(wage)
 
             daily = value * 8
             
@@ -35,7 +35,7 @@ def calculate (request):
             
             monthly = weekly * 4
             
-            value = int(bills)
+            value = float(bills)
             bills = monthly - value
             
 

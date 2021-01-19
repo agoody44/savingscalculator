@@ -13,9 +13,9 @@
 </div>
 
 
+<br>
 
-
-<table class="table table-sm table-hover table-dark" id='CT'>
+<table class="table table-dark" id='CT'>
     {% if wage and bills %}
     <thead>
     <tr>
@@ -24,17 +24,17 @@
         <th scope="col">Daily Wage</th>
         <th scope="col">Weekly Wage</th>
         <th scope="col">Monthy Wage</th>
-        <th scope="col">Bills</th>
+        <th scope="col">Fun Money</th>
     </tr>
     </thead>
     <tbody>
     <tr>
         
-        <td>{{wage}}</td>
-        <td>{{daily}}</td>
-        <td>{{weekly}}</td>
-        <td>{{monthly}}</td>
-        <td>{{bills}}</td>
+        <td>$ {{wage}}</td>
+        <td>$ {{daily}}</td>
+        <td>$ {{weekly}}</td>
+        <td>$ {{monthly}}</td>
+        <td>$ {{bills}}</td>
     </tr>
     </tbody>
     {% endif %}

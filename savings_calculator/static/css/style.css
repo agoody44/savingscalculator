@@ -32,18 +32,25 @@ img {
 
 #CT{
     border: 3px solid rgb(0, 0, 0);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+tr,td {
+    text-align:left;
+}
+
 
 /* Wage and Bills Form */
 form {
-    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* button {
-    align-items: center;
-} */
+button {
+    width: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
