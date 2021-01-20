@@ -9,8 +9,11 @@ body {
     font-family: 'Potta One', cursive;
     text-align: center;
     margin: 0px;
+    padding: 0px;
 
 }
+
+
 
 .navbar{
     background-color: black;
@@ -41,6 +44,8 @@ img {
     width:60%;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 5px 5px #888888;
+    border-radius: 3px;
 }
 
 tr,td {
@@ -54,8 +59,10 @@ form {
     margin-right: auto;
     border: 4px solid rgb(0, 0, 0);
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 5px;
+    border-style: inset;
     width:30%;
+    box-shadow: 5px 5px #888888;;
 }
 
 button {
@@ -71,4 +78,18 @@ button {
     width: auto; 
     max-width: 300px; 
     max-height: 300px;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #434343;
+    color: white;
+    font-size: 30px;
+    width: 100vw;
+}
+
+#border {
+    border: 10px solid transparent;
+    padding: 15px;
 }

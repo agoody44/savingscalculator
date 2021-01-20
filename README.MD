@@ -25,3 +25,4 @@ A simple calculator app.
 ## Future Enchancments
 - Add more calculation fields
 - Add more styling
+- Add taxes
