@@ -80,14 +80,6 @@ button {
     max-height: 300px;
 }
 
-.header {
-    padding: 60px;
-    text-align: center;
-    background: #434343;
-    color: white;
-    font-size: 30px;
-    width: 100vw;
-}
 
 #border {
     border: 10px solid transparent;
