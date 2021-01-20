@@ -12,6 +12,7 @@ def calculate (request):
     daily = None
     weekly = None
     monthly = None
+    money = None
 
     if request.method == 'POST':
         form = CalculateSavings(request.POST)
@@ -33,7 +34,7 @@ def calculate (request):
             monthly = weekly * 4
             
             value = float(bills)
-            bills = monthly - value
+            money = monthly - value
             
 
             
@@ -41,6 +42,6 @@ def calculate (request):
             print(wage, bills, daily, weekly, monthly)
 
     form = CalculateSavings()
-    return render(request, 'calculate.html', {'form' : form, 'wage' : wage, 'daily' : daily, 'weekly' : weekly, 'monthly': monthly, 'bills' : bills, } )
+    return render(request, 'calculate.html', {'form' : form, 'wage' : wage, 'daily' : daily, 'weekly' : weekly, 'monthly': monthly, 'bills' : bills, 'money' : money } )
 
 
